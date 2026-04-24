@@ -108,6 +108,26 @@
 
 @media (max-width: 700px) {
   .section { padding: 3rem 1.2rem; }
-  .item { grid-template-columns: 1fr auto; }
-  .left { display: none; }
+  .item {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+  }
+  .left {
+    grid-column: 1;
+    grid-row: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+  }
+  .index { display: none; }
+  .right {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .toggle {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
 }
