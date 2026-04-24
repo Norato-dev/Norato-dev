@@ -47,17 +47,17 @@
 
 @media (max-width: 700px) {
   .nav {
-    padding: 0.9rem 1rem;
-    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    justify-content: center;
   }
   .logo {
-    font-size: 12px;
+    display: none;
   }
   .links {
-    gap: 0.5rem;
+    gap: 1.2rem;
   }
   .link {
-    font-size: 10px;
-    letter-spacing: 0.04em;
+    font-size: 11px;
+    letter-spacing: 0.05em;
   }
 }
