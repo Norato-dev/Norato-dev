@@ -98,15 +98,19 @@ export const projects = [
       'RPG web en tiempo real con generación dinámica de niveles y mecánicas multijugador. Combina progresión RPG clásica con combate por teclado.',
     stack: ['React', 'Firebase', 'Vercel', 'Real-time DB'],
     repo: 'https://github.com/Norato-dev/CodeTyping-RPG',
+    url: 'https://code-typing.davidnorato.dev/',
+    image: '/previews/typing-rpg.png', // ← screenshot del proyecto (colócalo en public/previews/)
   },
   {
     num: '02',
-    type: 'Web App / Auth',
-    name: 'Etch-a-Sketch App',
+    type: 'Full-stack / Backend',
+    name: 'URL Shortener',
     description:
-      'Aplicación de dibujo con almacenamiento persistente y autenticación de usuarios. Interacciones con canvas respaldadas por base de datos.',
-    stack: ['JS', 'Supabase', 'Canvas API', 'Auth'],
-    repo: 'https://github.com/Norato-dev/Proyecto-Programacion-Web',
+      'Plataforma full-stack para acortar URLs con analytics en tiempo real. Incluye tracking de clicks, dispositivos y países, caché con Redis y dashboard de métricas.',
+    stack: ['Next.js', 'PostgreSQL', 'Prisma', 'Redis', 'Vercel'],
+    repo: 'https://github.com/Norato-dev/url-shortener',
+    url: 'https://short.davidnorato.dev',
+    image: '/previews/url-shortener.png',
   },
   {
     num: '03',
@@ -116,5 +120,18 @@ export const projects = [
       'PWA de recordatorios con notificaciones push reales que llegan aunque el teléfono esté bloqueado. Instalable como app nativa, funciona offline via Service Worker + Workbox.',
     stack: ['React', 'Vite', 'Supabase', 'Web Push API', 'PWA', 'Vercel'],
     repo: 'https://github.com/Norato-dev/Reminders',
+    url: 'https://recordatorios.davidnorato.dev/',
+    image: '/previews/recordatorios.png',
+  },
+  {
+    num: '04',
+    type: 'Web App / Auth',
+    name: 'Etch-a-Sketch App',
+    description:
+      'Aplicación de dibujo con almacenamiento persistente y autenticación de usuarios. Interacciones con canvas respaldadas por base de datos.',
+    stack: ['JS', 'Supabase', 'Canvas API', 'Auth'],
+    repo: 'https://github.com/Norato-dev/Proyecto-Programacion-Web',
+    url: null,
+    image: null,
   },
 ];
