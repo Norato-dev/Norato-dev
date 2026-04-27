@@ -15,7 +15,6 @@
 
 .card {
   background: var(--surface);
-  padding: 2rem;
   transition: background 0.25s;
   position: relative;
   overflow: hidden;
@@ -23,6 +22,44 @@
 
 .card:hover {
   background: var(--surface2);
+}
+
+.cardBody {
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.preview {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card:hover .preview {
+  opacity: 1;
+}
+
+.preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.previewOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 15, 0.75) 0%,
+    rgba(10, 10, 15, 0.93) 60%,
+    rgba(10, 10, 15, 0.99) 100%
+  );
 }
 
 .cardWide {
@@ -86,6 +123,30 @@
   padding: 2px 8px;
   background: rgba(127, 119, 221, 0.1);
   border: 1px solid rgba(127, 119, 221, 0.25);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btnLive {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--bg);
+  background: var(--accent2);
+  border: 1px solid var(--accent2);
+  padding: 4px 12px;
+  white-space: nowrap;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btnLive:hover {
+  background: transparent;
+  color: var(--accent2);
 }
 
 .link {
