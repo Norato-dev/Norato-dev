@@ -27,6 +27,40 @@
   animation: fadeUp 0.6s ease both;
 }
 
+/* AVATAR */
+.avatar {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.4rem;
+  position: relative;
+}
+
+.avatar::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--border);
+  pointer-events: none;
+}
+
+.avatarImg {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 1px solid var(--accent);
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
 .tag {
   font-family: var(--mono);
   font-size: 14px;
@@ -106,6 +140,20 @@
 .btnOutline:hover {
   border-color: var(--text);
   color: var(--text);
+}
+
+.btnCV {
+  background: transparent;
+  border-color: var(--border2);
+  color: var(--muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btnCV:hover {
+  border-color: var(--accent2);
+  color: var(--accent2);
 }
 
 /* TERMINAL */
