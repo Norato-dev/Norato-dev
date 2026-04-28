@@ -2,6 +2,7 @@ import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import ScrollProgress from './components/ui/ScrollProgress';
 import Hero from './sections/Hero/Hero';
 import Stats from './sections/Stats/Stats';
 import Experience from './sections/Experience/Experience';
@@ -12,6 +13,7 @@ import Contact from './sections/Contact/Contact';
 export default function App() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />

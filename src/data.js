@@ -114,6 +114,17 @@ export const projects = [
   },
   {
     num: '03',
+    type: 'AI / Design Tools',
+    name: 'Palette AI',
+    description:
+      'Generador de paletas de colores con IA. Describe un estilo en texto libre y obtén 5 colores coherentes listos para exportar en CSS, Tailwind config o JSON. Incluye preview en componentes UI reales y guardado de favoritos.',
+    stack: ['Next.js', 'Groq API', 'LLaMA 3.3', 'Tailwind CSS', 'Framer Motion'],
+    repo: 'https://github.com/Norato-dev/color-palette-ai',
+    url: 'https://color.davidnorato.dev',
+    image: '/previews/palette-ai.png',
+  },
+  {
+    num: '04',
     type: 'PWA / Push Notifications',
     name: 'Mis Recordatorios',
     description:
@@ -124,7 +135,7 @@ export const projects = [
     image: '/previews/recordatorios.png',
   },
   {
-    num: '04',
+    num: '05',
     type: 'Web App / Auth',
     name: 'Etch-a-Sketch App',
     description:
